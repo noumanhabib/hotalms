@@ -1,0 +1,93 @@
+span.line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.404);
+    display: block;
+}
+.booking.container {
+    width: 655px;
+    padding: 20px 35px;
+    background: linear-gradient(136deg, #eee5e5d6, #fffcdd);
+}
+
+.booking label {
+    font-weight: bold;
+    position: relative;
+}
+.booking label.require::before {
+    content: "*";
+    position: absolute;
+    color: var(--danger);
+    top: -2px;
+    right: -13px;
+    font-size: 1.1rem;
+}
+
+.booking .name input {
+    width: 250px;
+    padding: 1px 7px;
+    font-size: 1rem;
+}
+.booking .name select {
+    width: 250px;
+    padding: 4px 7px;
+    font-size: 1rem;
+    color: #9e9e9e;
+}
+.booking .name select option {
+    color: black;
+}
+.booking .name select option:first-child {
+    color: #9e9e9e;
+}
+
+.booking .labeled-input span {
+    font-size: 0.7rem;
+    color: #212121;
+    margin-top: 4px;
+}
+
+.booking .guest input {
+    width: 250px;
+    padding: 1px 7px;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.booking .guest {
+    position: relative;
+}
+.booking .guest .plus,
+.booking .guest .minus {
+    position: absolute;
+    top: 1px;
+    width: 30px;
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    height: 95%;
+    background-color: #a6a6a6;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.booking .guest .plus {
+    right: 1px;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+.booking .guest .minus {
+    left: 1px;
+}
+
+.booking .name select.black {
+    color: black;
+}
+
+.booking .departure-date-input .departure-date {
+    margin-left: 1.8rem;
+}
